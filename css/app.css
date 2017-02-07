@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    color: #000000;
+    padding: 0;
+    margin: 0;
+}
+
+body.in-transition {
+    transition: transform 900ms ease;
+}
+
+a {
+    text-decoration: none;
+    color: #bb180e;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    padding: 0 1rem;
+    /*background: rgba(green, .3);*/
+    /*padding: .5rem 1rem;*/
+}
+
+/* HEADER & NAV STYLES */
+header {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 1.5rem;
+    font-size: 1.25rem;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    color: #000;
+}
+
+.header-logo {
+    flex: 1 0 auto;
+    order: 10;
+    color: #000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-logo img {
+    max-height: 2em;
+    width: auto;
+    display: inline-block;
+}
+
+.header-nav {
+    flex: 0 1 auto;
+    order: 20;
+}
+
+.header-nav a {
+    color: #000;
+}
+
+.header-nav a:hover {
+    color: #bb180e;
+}
+
+/*Order of Nav items*/
+.nav-about {
+    order: 10;
+}
+
+.nav-faq {
+    order: 20;
+}
+
+.nav-contact {
+    order: 30;
+}
+
+.nav-login {
+    order: 40;
+}
+
+/* FLEXBOX GRID STYLES*/
+.flex-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-grid .header {
+    flex: 100%;
+}
+
+.flex-grid .col {
+    flex: 1;
+}
+
+.flex-grid-3 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-grid-3 .col {
+    width: 32%;
+}
+
+@media (max-width: 400px) {
+    .flex-grid,
+    .flex-grid-3 {
+        display: block;
+    }
+
+    .col {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+}
+
+.flex-grid {
+    margin: 0 0 20px 0;
+}
+
+.col {
+    padding: 20px;
+}
+
+/* Page Styles */
+.main {
+    padding-top: 95px;
+}
+
+.img-responsive {
+    width: 100%;
+    height: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bg-grey {
+    background: #EEEEEE;
+}
+
+footer {
+    background: #000;
+    color: #FFF;
+}
+
+footer .flex-grid {
+    margin: 0;
+}
